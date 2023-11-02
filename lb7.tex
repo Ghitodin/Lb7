@@ -1,50 +1,36 @@
 \documentclass{article}
-\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[a4paper, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
 \usepackage{tcolorbox}
-\usepackage{listings}
+\usepackage{minted}
 \usepackage{multicol}
 
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{gray!20},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
-}
+\tcbuselibrary{minted, skins}
 
-\lstset{style=mystyle}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{0.9}
 
 \begin{document}
 \begin{center}
     \LARGE Тест з програмування на Python \\
-    \vspace{1em}
-    Ім'я: \underline{\hspace{5cm}} Призвище: \underline{\hspace{5cm}} \\
-    \vspace{1em}
+    \vspace{0.5em}
+    Ім'я: \underline{\hspace{4cm}} Призвище: \underline{\hspace{4cm}} \\
+    \vspace{0.5em}
     Що буде виведено на екран в результаті виконання наступних команд?
 \end{center}
 
 \begin{multicols}{2}
-\begin{tcolorbox}[rounded corners]
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
 \textbf{Завдання 1.} Що виведе наступний код:
-\begin{lstlisting}[language=Python]
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
 s = 0
 for k in range(3, 11):
     s = s + k
 print(s)
-\end{lstlisting}
+\end{minted}
 Варіанти відповіді: \\
 1. 45 \\
 2. 52 \\
@@ -52,9 +38,9 @@ print(s)
 4. 14 \\
 \end{tcolorbox}
 
-\begin{tcolorbox}[rounded corners]
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
 \textbf{Завдання 2.} Що виведе наступний код:
-\begin{lstlisting}[language=Python]
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
 z = 5
 for n in range(5):
     if n > 10:
@@ -62,7 +48,7 @@ for n in range(5):
     else:
         z = z + n
 print(z)
-\end{lstlisting}
+\end{minted}
 Варіанти відповіді: \\
 1. 15 \\
 2. 51 \\
@@ -70,9 +56,9 @@ print(z)
 4. 10 \\
 \end{tcolorbox}
 
-\begin{tcolorbox}[rounded corners]
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
 \textbf{Завдання 3.} Що виведе наступний код:
-\begin{lstlisting}[language=Python]
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
 a = 15
 b = 5
 while a > b:
@@ -81,7 +67,7 @@ while a > b:
     else:
         a = a - 2 * b + 1
 print(b)
-\end{lstlisting}
+\end{minted}
 Варіанти відповіді: \\
 1. 20 \\
 2. 6 \\
@@ -89,9 +75,9 @@ print(b)
 4. 5 \\
 \end{tcolorbox}
 
-\begin{tcolorbox}[rounded corners]
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
 \textbf{Завдання 4.} Що виведе наступний код:
-\begin{lstlisting}[language=Python]
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
 c = 0
 m = 8
 while m > 1:
@@ -99,7 +85,7 @@ while m > 1:
     c = (c + d) * 10
     m = m // 10
 print(c)
-\end{lstlisting}
+\end{minted}
 Варіанти відповіді: \\
 1. 20 \\
 2. 8 \\
@@ -107,9 +93,9 @@ print(c)
 4. 0.8 \\
 \end{tcolorbox}
 
-\begin{tcolorbox}[rounded corners]
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
 \textbf{Завдання 5.} Що виведе наступний код:
-\begin{lstlisting}[language=Python]
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
 n = 2
 v = 4
 r = 5
@@ -119,13 +105,13 @@ while True:
     if n >= 20:
         break
 print(r)
-\end{lstlisting}
+\end{minted}
 Варіанти відповіді: \\
 1. 8 \\
 2. 6 \\
 3. 5 \\
 4. 7 \\
 \end{tcolorbox}
-\end{multicols}
 
+\end{multicols}
 \end{document}

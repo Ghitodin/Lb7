@@ -1,3 +1,829 @@
+Q:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1. Титульний лист, складається з двох рядків: ім'я та призвище 
+
+A:
+Ось базовий приклад документа в LaTeX, який відповідає вашому запиту:
+
+```latex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc} % для підтримки українських символів
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian]{babel}
+
+\title{Тестування з програмування на Python}
+\author{Ім'я Прізвище}
+\date{} % цей рядок видалить дату з титульного аркуша
+
+\begin{document}
+
+\maketitle
+
+\section*{Завдання 1}
+Напишіть функцію, яка перевертає рядок.
+
+\section*{Завдання 2}
+Напишіть функцію, яка повертає суму двох чисел.
+
+% Додайте інші завдання за потреби
+
+\end{document}
+```
+
+Для компіляції цього документа вам потрібно мати встановлений LaTeX. Ви можете вставити цей код у будь-яке середовище LaTeX, таке як Overleaf, або використовувати локальний редактор і компілятор.
+
+Ви можете змінити "Ім'я Прізвище" на ваше ім'я та прізвище, а також додати або змінити завдання за потреби.
+
+Q:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1. Титульний лист, складається з двох полів вводу: ім'я та призвище
+2. Завдання 1. Що виведе наступний код:
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+A:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1. Титульний лист, складається з двох полів вводу: ім'я та призвище
+2. Завдання 1. Що виведе наступний код:
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+Q:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1. Титульний лист, складається з двох полів вводу: ім'я та призвище
+2. Завдання 1. Що виведе наступний код:
+(оформити як код)
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+A:
+Ось приклад LaTeX документа, який відповідає вашим вимогам:
+
+```latex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian]{babel}
+\usepackage{hyperref}
+\usepackage{listings}
+
+% Налаштування для коду Python
+\lstset{language=Python,
+    basicstyle=\ttfamily\small,
+    frame=single,
+    breaklines=true
+}
+
+\begin{document}
+
+\begin{Form}
+\noindent Ім'я: \TextField[name=name,width=4cm]{~}\\
+\noindent Прізвище: \TextField[name=surname,width=4cm]{~}\\
+
+\section*{Завдання 1}
+Що виведе наступний код:
+\begin{lstlisting}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{lstlisting}
+
+\noindent Варіанти відповіді: 
+\begin{itemize}
+    \item[\CheckBox[name=answer1,value=1]{~}] 45
+    \item[\CheckBox[name=answer2,value=2]{~}] 52
+    \item[\CheckBox[name=answer3,value=3]{~}] 25
+    \item[\CheckBox[name=answer4,value=4]{~}] 14
+\end{itemize}
+\end{Form}
+
+\end{document}
+```
+
+Після компіляції цього коду у вас буде PDF-документ із полями для введення для ім'я та прізвища, а також блоком коду Python та чотирма прапорцями для відповідей на завдання.
+
+Q:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1) Титульний лист, складається з двох полів вводу: ім'я та призвище
+2) Завдання 1. Що виведе наступний код:
+(оформити як код)
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+3) Завдання 2. Що виведе наступний код:
+(оформити як код)
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+
+Варіанти відповідей:
+1. 15
+2. 51
+3. 0
+4. 10
+
+Кожен блок повинен бути в закругленних рамках.
+
+A:
+Ось ваш LaTeX документ:
+
+```latex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian]{babel}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{framed}
+
+% Налаштування для коду Python
+\lstset{language=Python,
+    basicstyle=\ttfamily\small,
+    frame=single,
+    breaklines=true
+}
+
+\begin{document}
+
+\begin{framed}
+\begin{Form}
+\noindent Ім'я: \TextField[name=name,width=4cm]{~}\\
+\noindent Прізвище: \TextField[name=surname,width=4cm]{~}\\
+\end{Form}
+\end{framed}
+
+\begin{framed}
+\section*{Завдання 1}
+Що виведе наступний код:
+\begin{lstlisting}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{lstlisting}
+
+\noindent Варіанти відповіді: 
+\begin{Form}
+\begin{itemize}
+    \item[\CheckBox[name=answer1,value=1]{~}] 45
+    \item[\CheckBox[name=answer2,value=2]{~}] 52
+    \item[\CheckBox[name=answer3,value=3]{~}] 25
+    \item[\CheckBox[name=answer4,value=4]{~}] 14
+\end{itemize}
+\end{Form}
+\end{framed}
+
+\begin{framed}
+\section*{Завдання 2}
+Що виведе наступний код:
+\begin{lstlisting}
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{lstlisting}
+
+\noindent Варіанти відповідей: 
+\begin{Form}
+\begin{itemize}
+    \item[\CheckBox[name=answer5,value=1]{~}] 15
+    \item[\CheckBox[name=answer6,value=2]{~}] 51
+    \item[\CheckBox[name=answer7,value=3]{~}] 0
+    \item[\CheckBox[name=answer8,value=4]{~}] 10
+\end{itemize}
+\end{Form}
+\end{framed}
+
+\end{document}
+```
+
+Ви можете скомпілювати цей LaTeX код, щоб отримати PDF-документ із заданими блоками в рамках.
+
+Q:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1) Титульний лист, складається з двох полів вводу: ім'я та призвище
+2) Завдання 1. Що виведе наступний код:
+(оформити як код)
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+3) Завдання 2. Що виведе наступний код:
+(оформити як код)
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+
+Варіанти відповідей:
+1. 15
+2. 51
+3. 0
+4. 10
+
+Кожен блок повинен бути в рамках з закругленими краями. У дві колонки.
+
+A:
+Ось LaTeX код для вашого документа:
+
+```latex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian]{babel}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{framed}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+% Налаштування для коду Python
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    frame=single,
+    breaklines=true
+}
+
+\begin{document}
+
+\begin{tcolorbox}[arc=3mm, colback=white]
+\begin{Form}
+\noindent Ім'я: \TextField[name=name,width=4cm]{~}\\
+\noindent Прізвище: \TextField[name=surname,width=4cm]{~}\\
+\end{Form}
+\end{tcolorbox}
+
+\begin{multicols}{2}
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 1}
+Що виведе наступний код:
+\begin{lstlisting}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{lstlisting}
+
+\noindent Варіанти відповіді: 
+\begin{Form}
+\begin{itemize}
+    \item[\CheckBox[name=answer1,value=1]{~}] 45
+    \item[\CheckBox[name=answer2,value=2]{~}] 52
+    \item[\CheckBox[name=answer3,value=3]{~}] 25
+    \item[\CheckBox[name=answer4,value=4]{~}] 14
+\end{itemize}
+\end{Form}
+\end{tcolorbox}
+
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 2}
+Що виведе наступний код:
+\begin{lstlisting}
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{lstlisting}
+
+\noindent Варіанти відповідей: 
+\begin{Form}
+\begin{itemize}
+    \item[\CheckBox[name=answer5,value=1]{~}] 15
+    \item[\CheckBox[name=answer6,value=2]{~}] 51
+    \item[\CheckBox[name=answer7,value=3]{~}] 0
+    \item[\CheckBox[name=answer8,value=4]{~}] 10
+\end{itemize}
+\end{Form}
+\end{tcolorbox}
+\end{multicols}
+
+\end{document}
+```
+
+Цей код створить документ із двома колонками та блоками в рамках з закругленими краями. Коли ви скомпілюєте цей LaTeX код, ви отримаєте потрібний PDF-документ.
+
+Q:
+Зроби в LaTeX документ, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1) Титульний лист, складається з двох полів вводу: ім'я та призвище
+2) Завдання 1. Що виведе наступний код:
+(оформити як код)
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+3) Завдання 2. Що виведе наступний код:
+(оформити як код)
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+
+Варіанти відповідей:
+1. 15
+2. 51
+3. 0
+4. 10
+
+4) Завдання 3. Що виведе наступний код:
+(оформити як код)
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+Варіанти відповіді: 
+1. 20
+2. 6
+3. 11
+4. 5
+
+5) Завдання 4. Що виведе наступний код:
+(оформити як код)
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+Варіанти відповіді: 
+1. 20
+2. 8
+3. 80
+4. 0.8
+
+6) Завдання 5. Що виведе наступний код:
+(оформити як код)
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+Варіанти відповіді: 
+1. 8
+2. 6
+3. 5
+4. 7
+Кожен блок повинен бути в рамках з закругленими краями. Усі код повинен бути з пронумерованими строками на сірому фоні. У дві колонки.
+
+A:
+Ось LaTeX код для вашого документа:
+
+```latex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian]{babel}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+% Налаштування для коду Python з пронумерованими рядками
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{gray!20},
+    numbers=left,
+    frame=single,
+    breaklines=true
+}
+
+\begin{document}
+
+\begin{tcolorbox}[arc=3mm, colback=white]
+\noindent Ім'я: \underline{\hspace{4cm}}\\
+\noindent Прізвище: \underline{\hspace{4cm}}
+\end{tcolorbox}
+
+\begin{multicols}{2}
+% Завдання 1
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 1}
+Що виведе наступний код:
+\begin{lstlisting}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{lstlisting}
+
+\noindent Варіанти відповіді:
+\begin{enumerate}
+    \item 45
+    \item 52
+    \item 25
+    \item 14
+\end{enumerate}
+\end{tcolorbox}
+
+% Завдання 2
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 2}
+Що виведе наступний код:
+\begin{lstlisting}
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{lstlisting}
+
+\noindent Варіанти відповіді:
+\begin{enumerate}
+    \item 15
+    \item 51
+    \item 0
+    \item 10
+\end{enumerate}
+\end{tcolorbox}
+
+% Завдання 3
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 3}
+Що виведе наступний код:
+\begin{lstlisting}
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+\end{lstlisting}
+
+\noindent Варіанти відповіді:
+\begin{enumerate}
+    \item 20
+    \item 6
+    \item 11
+    \item 5
+\end{enumerate}
+\end{tcolorbox}
+
+% Завдання 4
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 4}
+Що виведе наступний код:
+\begin{lstlisting}
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+\end{lstlisting}
+
+\noindent Варіанти відповіді:
+\begin{enumerate}
+    \item 20
+    \item 8
+    \item 80
+    \item 0.8
+\end{enumerate}
+\end{tcolorbox}
+
+% Завдання 5
+\begin{tcolorbox}[arc=3mm, colback=white]
+\section*{Завдання 5}
+Що виведе наступний код:
+\begin{lstlisting}
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+\end{lstlisting}
+
+\noindent Варіанти відповіді:
+\begin{enumerate}
+    \item 8
+    \item 6
+    \item 5
+    \item 7
+\end{enumerate}
+\end{tcolorbox}
+\end{multicols}
+
+\end{document}
+```
+
+Цей код створить документ з двома колонками, кодом Python на сірому фоні, з пронумерованими строками та блоками в рамках з закругленими краями. Коли ви скомпілюєте цей LaTeX код, ви отримаєте потрібний PDF-документ.
+
+Q:
+Зроби в LaTeX документ на один лист, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
+1) Титульний лист, складається з двох полів вводу: ім'я та призвище
+2) Завдання 1. Що виведе наступний код:
+(оформити як код)
+s = 0
+for k in range(3, 11):
+    s = s + k
+
+print(s)
+
+Варіанти відповіді: 
+1. 45
+2. 52
+3. 25
+4. 14
+
+3) Завдання 2. Що виведе наступний код:
+(оформити як код)
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+
+Варіанти відповідей:
+1. 15
+2. 51
+3. 0
+4. 10
+
+4) Завдання 3. Що виведе наступний код:
+(оформити як код)
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+Варіанти відповіді: 
+1. 20
+2. 6
+3. 11
+4. 5
+
+5) Завдання 4. Що виведе наступний код:
+(оформити як код)
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+Варіанти відповіді: 
+1. 20
+2. 8
+3. 80
+4. 0.8
+
+6) Завдання 5. Що виведе наступний код:
+(оформити як код)
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+Варіанти відповіді: 
+1. 8
+2. 6
+3. 5
+4. 7
+Кожен блок повинен бути в рамках з закругленими краями. Усі код повинен бути з пронумерованими строками на сірому фоні. У дві колонки.
+
+A:
+Ось зразок документа LaTeX, який відповідає вашим вимогам:
+
+```latex
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english,ukrainian]{babel}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{geometry}
+
+\geometry{
+   a4paper,
+   total={170mm,257mm},
+   left=20mm,
+   top=20mm,
+}
+
+\tcbset{enhanced, boxrule=0.8pt, arc=3mm, colback=white}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color[gray]{0.9},
+  numbers=left,
+  stepnumber=1,
+  showstringspaces=false,
+  tabsize=2,
+  breaklines=true,
+  frame=none,
+}
+
+\begin{document}
+
+% Title Page
+\begin{tcolorbox}
+\large{\textbf{Тест з програмування на Python}} \\
+\textbf{Ім'я:} \underline{\hspace{5cm}} \textbf{Призвище:} \underline{\hspace{5cm}}
+\end{tcolorbox}
+
+% Questions
+\begin{multicols}{2}
+\begin{tcolorbox}
+\textbf{Завдання 1.} Що виведе наступний код:
+\begin{lstlisting}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 45 \\
+2. 52 \\
+3. 25 \\
+4. 14
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Завдання 2.} Що виведе наступний код:
+\begin{lstlisting}
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 15 \\
+2. 51 \\
+3. 0 \\
+4. 10
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Завдання 3.} Що виведе наступний код:
+\begin{lstlisting}
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 20 \\
+2. 6 \\
+3. 11 \\
+4. 5
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Завдання 4.} Що виведе наступний код:
+\begin{lstlisting}
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 20 \\
+2. 8 \\
+3. 80 \\
+4. 0.8
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Завдання 5.} Що виведе наступний код:
+\begin{lstlisting}
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 8 \\
+2. 6 \\
+3. 5 \\
+4. 7
+\end{tcolorbox}
+
+\end{multicols}
+\end{document}
+```
+
+Ви можете скопіювати цей код у будь-який LaTeX-редактор або компілятор (як TeXShop, Overleaf тощо) та створити PDF-документ.
+
+Q:
 Зроби в LaTeX документ на один лист, в якому буде тестування з програмування з Python. Документ повинен складатись з наступних блоків:
 1) Титульний лист, складається з двох полів вводу: ім'я та призвище
 Далі написати наступний рядок: "Що буде виведено на екран в результаті виконання наступних команд?"
@@ -79,3 +905,549 @@ print(r)
 3. 5
 4. 7
 Кожен блок повинен бути в рамках з закругленими краями. Усі код повинен бути кольоровий з пронумерованими строками на сірому фоні. У дві колонки.
+
+A:
+Ось LaTeX-код для вашого запиту:
+
+```latex
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{multicol}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{gray!20},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+\begin{center}
+    \LARGE Тест з програмування на Python \\
+    \vspace{1em}
+    Ім'я: \underline{\hspace{5cm}} Призвище: \underline{\hspace{5cm}} \\
+    \vspace{1em}
+    Що буде виведено на екран в результаті виконання наступних команд?
+\end{center}
+
+\begin{multicols}{2}
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 1.} Що виведе наступний код:
+\begin{lstlisting}[language=Python]
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 45 \\
+2. 52 \\
+3. 25 \\
+4. 14 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 2.} Що виведе наступний код:
+\begin{lstlisting}[language=Python]
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 15 \\
+2. 51 \\
+3. 0 \\
+4. 10 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 3.} Що виведе наступний код:
+\begin{lstlisting}[language=Python]
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 20 \\
+2. 6 \\
+3. 11 \\
+4. 5 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 4.} Що виведе наступний код:
+\begin{lstlisting}[language=Python]
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 20 \\
+2. 8 \\
+3. 80 \\
+4. 0.8 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 5.} Що виведе наступний код:
+\begin{lstlisting}[language=Python]
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+\end{lstlisting}
+Варіанти відповіді: \\
+1. 8 \\
+2. 6 \\
+3. 5 \\
+4. 7 \\
+\end{tcolorbox}
+\end{multicols}
+
+\end{document}
+```
+
+Даний код створить документ на один лист з тестом на програмування з Python використовуючи LaTeX. Ви можете скомпілювати його за допомогою будь-якого дистрибутиву LaTeX.
+
+Q:
+Тепер застосуй для цього пакет для коду на python, який робить підсвітку синтаксису
+
+A:
+Щоб використовувати підсвітку синтаксису для Python в LaTeX, можна використовувати пакет `minted`. `minted` використовує Python-пакет Pygments для підсвічування коду, тому вам потрібно встановити Pygments і компілювати LaTeX-файл з параметром `-shell-escape`.
+
+Ось ваш LaTeX-код із застосуванням `minted`:
+
+```latex
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{tcolorbox}
+\usepackage{minted}
+\usepackage{multicol}
+
+\tcbuselibrary{minted, skins}
+
+\newtcbinputlisting{\mycode}[2][]{
+  listing file={#2},
+  minted language=python,
+  minted style=default,
+  minted options={linenos, numbersep=3mm, fontsize=\footnotesize, breaklines},
+  listing only, enhanced,
+  breakable, 
+  arc=2mm,
+  outer arc=2mm,
+  colback=gray!20,
+  colframe=black!50,
+  boxrule=0.4pt,
+  left=5mm,
+  width=\linewidth,
+  #1
+}
+
+\begin{document}
+\begin{center}
+    \LARGE Тест з програмування на Python \\
+    \vspace{1em}
+    Ім'я: \underline{\hspace{5cm}} Призвище: \underline{\hspace{5cm}} \\
+    \vspace{1em}
+    Що буде виведено на екран в результаті виконання наступних команд?
+\end{center}
+
+\begin{multicols}{2}
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 1.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\footnotesize, linenos, numbersep=5pt, frame=lines, framesep=2mm]{python}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{minted}
+Варіанти відповіді: \\
+1. 45 \\
+2. 52 \\
+3. 25 \\
+4. 14 \\
+\end{tcolorbox}
+
+... % (Аналогічно для інших завдань)
+
+\end{multicols}
+
+\end{document}
+```
+
+Для компіляції цього коду використовуйте команду:
+
+```
+pdflatex -shell-escape <ім'я_файлу>.tex
+```
+
+Цей код застосовує пакет `minted` для підсвітки синтаксису Python, і вигляд коду буде схожий на той, який можна бачити у сучасних текстових редакторах з підтримкою підсвітки синтаксису.
+
+Q:
+Покажи весь код
+
+A:
+Звісно, ось повний LaTeX код для вашого тесту з використанням пакету `minted` для підсвітки синтаксису Python:
+
+```latex
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{tcolorbox}
+\usepackage{minted}
+\usepackage{multicol}
+
+\tcbuselibrary{minted, skins}
+
+\newtcbinputlisting{\mycode}[2][]{
+  listing file={#2},
+  minted language=python,
+  minted style=default,
+  minted options={linenos, numbersep=3mm, fontsize=\footnotesize, breaklines},
+  listing only, enhanced,
+  breakable, 
+  arc=2mm,
+  outer arc=2mm,
+  colback=gray!20,
+  colframe=black!50,
+  boxrule=0.4pt,
+  left=5mm,
+  width=\linewidth,
+  #1
+}
+
+\begin{document}
+\begin{center}
+    \LARGE Тест з програмування на Python \\
+    \vspace{1em}
+    Ім'я: \underline{\hspace{5cm}} Призвище: \underline{\hspace{5cm}} \\
+    \vspace{1em}
+    Що буде виведено на екран в результаті виконання наступних команд?
+\end{center}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 1.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\footnotesize, linenos, numbersep=5pt, frame=lines, framesep=2mm]{python}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{minted}
+Варіанти відповіді: \\
+1. 45 \\
+2. 52 \\
+3. 25 \\
+4. 14 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 2.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\footnotesize, linenos, numbersep=5pt, frame=lines, framesep=2mm]{python}
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{minted}
+Варіанти відповіді: \\
+1. 15 \\
+2. 51 \\
+3. 0 \\
+4. 10 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 3.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\footnotesize, linenos, numbersep=5pt, frame=lines, framesep=2mm]{python}
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+\end{minted}
+Варіанти відповіді: \\
+1. 20 \\
+2. 6 \\
+3. 11 \\
+4. 5 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 4.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\footnotesize, linenos, numbersep=5pt, frame=lines, framesep=2mm]{python}
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+\end{minted}
+Варіанти відповіді: \\
+1. 20 \\
+2. 8 \\
+3. 80 \\
+4. 0.8 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners]
+\textbf{Завдання 5.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\footnotesize, linenos, numbersep=5pt, frame=lines, framesep=2mm]{python}
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+\end{minted}
+Варіанти відповіді: \\
+1. 8 \\
+2. 6 \\
+3. 5 \\
+4. 7 \\
+\end{tcolorbox}
+
+\end{multicols}
+
+\end{document}
+```
+
+Як я вже зазначив раніше, для компіляції цього файлу вам потрібно встановити `Pygments` і компілювати з параметром `-shell-escape`.
+
+Q:
+Зроби так, щоб документ був на одну сторінку
+
+A:
+Для зменшення розміру документа, щоб він вміщався на одну сторінку, можна зробити наступне:
+
+1. Зменшити відступи на сторінці.
+2. Зменшити шрифт та інтервали між рядками.
+3. Зменшити відступи між завданнями.
+
+Ось оновлений код:
+
+```latex
+\documentclass{article}
+\usepackage[a4paper, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{tcolorbox}
+\usepackage{minted}
+\usepackage{multicol}
+
+\tcbuselibrary{minted, skins}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{0.9}
+
+\begin{document}
+\begin{center}
+    \LARGE Тест з програмування на Python \\
+    \vspace{0.5em}
+    Ім'я: \underline{\hspace{4cm}} Призвище: \underline{\hspace{4cm}} \\
+    \vspace{0.5em}
+    Що буде виведено на екран в результаті виконання наступних команд?
+\end{center}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
+\textbf{Завдання 1.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{minted}
+Варіанти відповіді: \\
+1. 45 \\
+2. 52 \\
+3. 25 \\
+4. 14 \\
+\end{tcolorbox}
+
+% ... (аналогічно для інших завдань)
+
+\end{multicols}
+\end{document}
+```
+
+Я скоротив деякі відступи для прикладу та додав інші опції для зменшення розміру. Ви можете додатково налаштовувати розміри та відступи, щоб добитися бажаного результату.
+
+Q:
+Покажи весь код
+
+A:
+Звісно, ось повний код для вашого документа, який містить тест з програмування на Python та вміщується на одну сторінку:
+
+```latex
+\documentclass{article}
+\usepackage[a4paper, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{tcolorbox}
+\usepackage{minted}
+\usepackage{multicol}
+
+\tcbuselibrary{minted, skins}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{0.9}
+
+\begin{document}
+\begin{center}
+    \LARGE Тест з програмування на Python \\
+    \vspace{0.5em}
+    Ім'я: \underline{\hspace{4cm}} Призвище: \underline{\hspace{4cm}} \\
+    \vspace{0.5em}
+    Що буде виведено на екран в результаті виконання наступних команд?
+\end{center}
+
+\begin{multicols}{2}
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
+\textbf{Завдання 1.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
+s = 0
+for k in range(3, 11):
+    s = s + k
+print(s)
+\end{minted}
+Варіанти відповіді: \\
+1. 45 \\
+2. 52 \\
+3. 25 \\
+4. 14 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
+\textbf{Завдання 2.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
+z = 5
+for n in range(5):
+    if n > 10:
+        z = z - n
+    else:
+        z = z + n
+print(z)
+\end{minted}
+Варіанти відповіді: \\
+1. 15 \\
+2. 51 \\
+3. 0 \\
+4. 10 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
+\textbf{Завдання 3.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
+a = 15
+b = 5
+while a > b:
+    if a % 2 == 0:
+        b = b + a
+    else:
+        a = a - 2 * b + 1
+print(b)
+\end{minted}
+Варіанти відповіді: \\
+1. 20 \\
+2. 6 \\
+3. 11 \\
+4. 5 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
+\textbf{Завдання 4.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
+c = 0
+m = 8
+while m > 1:
+    d = m % 10
+    c = (c + d) * 10
+    m = m // 10
+print(c)
+\end{minted}
+Варіанти відповіді: \\
+1. 20 \\
+2. 8 \\
+3. 80 \\
+4. 0.8 \\
+\end{tcolorbox}
+
+\begin{tcolorbox}[rounded corners, top=1mm, bottom=1mm]
+\textbf{Завдання 5.} Що виведе наступний код:
+\begin{minted}[bgcolor=gray!20, fontsize=\scriptsize, linenos, numbersep=3pt, frame=lines, framesep=1mm]{python}
+n = 2
+v = 4
+r = 5
+while True:
+    n = n + n * v
+    r += 1
+    if n >= 20:
+        break
+print(r)
+\end{minted}
+Варіанти відповіді: \\
+1. 8 \\
+2. 6 \\
+3. 5 \\
+4. 7 \\
+\end{tcolorbox}
+
+\end{multicols}
+\end{document}
+```
+
+Даний код створює документ на одну сторінку з питаннями для тестування. Ви можете додатково налаштувати його за своїми потребами.
